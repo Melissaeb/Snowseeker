@@ -26,9 +26,12 @@ struct ResortView: View {
                         .scaledToFit()
                     
                     Text(resort.imageCredit)
+                        .padding(.horizontal, 4)
+                        .padding(.vertical, 2)
                         .font(.caption)
                         .fontWeight(.bold)
-                        .foregroundStyle(.white.opacity(0.6))
+                        .foregroundStyle(.white)
+                        .background(.black.opacity(0.3))
                         .offset(x: -5, y: -5)
                 }
                 
